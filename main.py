@@ -11,7 +11,7 @@ chatbot.save_model()
 print("Bot is running...")
 
 client = discord.Client()
-token = "OTgzMTA0MTg0NTk1Mzk4Njc2.G6xhB-.QLXlkITRSse4-YJUPaNfFlG9Dwdf4IykIEUg3Q"
+token = "token"
 
 @client.event
 async def on_message(message):
