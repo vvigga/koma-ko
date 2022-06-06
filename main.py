@@ -5,7 +5,7 @@ import neuralintents
 import nltk
 nltk.download('omw-1.4')
 
-chatbot = neuralintents.GenericAssistant("C:/Users/ikard/Desktop/koma/intents.json")
+chatbot = neuralintents.GenericAssistant("intents.json")
 chatbot.train_model()
 chatbot.save_model()
 
