@@ -2,10 +2,10 @@
 
 
 <b>commands</b>:
-- !ko [text]         - command for chatting
-- !ko weather [city] - shows the weather in the city
-- !ko quote          - shows a random quote from a famous person
-- !ko avatar [user]  - shows avatar of user
+- <b>!ko [text]</b>         - command for chatting
+- <b>!ko weather [city]</b> - shows the weather in the city
+- <b>!ko quote</b>          - shows a random quote from a famous person
+- <b>!ko avatar [user]</b>  - shows avatar of user
     
      !ko pat
      !ko wink           - interactive commands
