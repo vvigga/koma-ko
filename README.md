@@ -6,4 +6,4 @@
 - <b>!ko weather [city]</b>  - shows the weather in the city
 - <b>!ko quote</b>           - shows a random quote from a famous person
 - <b>!ko avatar [user]</b>   - shows avatar of user
-- !ko hug, !ko wink, !ko pat - interactive commands
+- <b>!ko hug, !ko wink, !ko pat</b> - interactive commands
