@@ -72,6 +72,17 @@ async def on_message(message):
         user = await client.fetch_user(int(content[2:-1]))
         userAvatar = user.avatar_url
         await message.channel.send(userAvatar)
+    elif message.content.startswith("!ko help"):
+        help = '''    - !ko                   - prefix for chatting
+    - !ko help              - shows help message
+    - !ko quote             - shows a famous person quote
+    - !ko weather <city>    - shows the current weather in the city
+    - !ko avatar  <user>    - shows the user's avatar
+    
+    !ko hug
+    !ko wink                - interactive commands
+    !ko pat'''
+        await message.channel.send("```" + help + "```")
     else:
         if message.content.startswith("!ko"):
             response = chatbot.request(message.content[4:])
