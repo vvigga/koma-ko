@@ -1,4 +1,5 @@
 import discord, neuralintents, nltk, requests, json
+from discord.ext import commands
 
 nltk.download('omw-1.4')
 
@@ -9,6 +10,7 @@ chatbot.save_model()
 print("Bot is running...")
 
 client = discord.Client()
+
 token = "token"
 
 def weather(city):
@@ -19,7 +21,7 @@ def weather(city):
     if x["cod"] != "404":
         y = x["main"]
 
-        current_temperature = y["temp"] - 273,15
+        current_temperature = y["temp"] - 273.15
         current_temperature = int(current_temperature[0])
         z = x["weather"]
 
@@ -65,6 +67,11 @@ async def on_message(message):
         embed = discord.Embed(color = 0xfafafa)
         embed.set_image(url = json_data['link'])
         await message.channel.send(embed = embed)
+    elif message.content.startswith("!ko avatar"):
+        content = message.content[11:]
+        user = await client.fetch_user(int(content[2:-1]))
+        userAvatar = user.avatar_url
+        await message.channel.send(userAvatar)
     else:
         if message.content.startswith("!ko"):
             response = chatbot.request(message.content[4:])
