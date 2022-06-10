@@ -1,4 +1,4 @@
-koma ko! - ai chat bot for discord!
+<b>koma ko!</b> - ai chat bot for discord!
 
 
 commands:
