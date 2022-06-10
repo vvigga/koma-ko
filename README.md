@@ -8,5 +8,5 @@
 - <b>!ko avatar [user]</b>  - shows avatar of user
     
      !ko pat
-     !ko wink           - interactive commands
+     !ko wink               - interactive commands
      !ko hug
