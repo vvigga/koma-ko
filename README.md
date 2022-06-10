@@ -6,6 +6,6 @@
 <p>- !ko weather <city> - shows the weather in the city</p>
 <p>- !ko quote          - shows a random quote from a famous person</p>
     
-    - !ko pat
-      !ko wink           - interactive commands
-      !ko hug
+     !ko pat
+     !ko wink           - interactive commands
+     !ko hug
