@@ -6,7 +6,6 @@
 
 ____
 ```
-commands list:
 - !ko                   - prefix for chatting
 - !ko help              - shows help message
 - !ko quote             - shows a famous person quote
